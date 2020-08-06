@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Tribute page FCC Mahatma Gandhi</title>
+ <meta charset="UTF-8">
+</head>
+<body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Physical Activity Survey</h1>
+    <p id="description" class="description text-center">
+Thank you for answering these questions about physical activity and sports habits.
+    </p>
+</header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required />
+  <br>
+     <div class="form-group">
+      <p>What is your gender?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Male</label>
+       
+       <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Female</label>
+       
+       </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      /> 
+    </div>
+       <div class="form-group">
+      <p>How often do you exercise?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Choose an option</option>
+        <option value="student">5 to 7 days a week</option>
+        <option value="job">3 to 5 days a week</option>
+        <option value="learner">2 to 3 days a week</option>
+        <option value="preferNo">One day a week</option>
+        <option value="preferNo">Few times a month</option>
+        <option value="other">I don't exercise</option>
+      </select>
+    </div>
+      
+      <div class="form-group">
+      <p>
+        Where do you usually exercise?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Public facility</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Private club</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Gym</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Teaching center</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Open places (park, street, field, sea, mountain ...)</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />At home</label
+      >
+      <label
+        >
+        </div>
+        
+      <div class="form-group">
+      <p>What sports do you practice the most?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your answer here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
